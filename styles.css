@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+}
+
+.svg-container {
+    width: 80%;
+    height: 50%;
+}
+
+text {
+    font-size: 90px;
+    font-weight: bold;
+    font-family: 'Jost', sans-serif;
+    fill: #FFC0CB; 
+}
+
+.tiny-square {
+    opacity: 50;
+    transition: opacity 1s ease-in-out;
+}
