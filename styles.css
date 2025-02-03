@@ -1,24 +1,46 @@
 body {
+    position: relative;
+    text-align: center;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: white;
 }
 
-.svg-container {
+ .svg-container {
     width: 80%;
     height: 50%;
+   margin:auto;
+
 }
 
-text {
-    font-size: 90px;
-    font-weight: bold;
+.text-back {
+    font-size: 90px; /* Bigger than the animated text */
+    font-weight: 800;
     font-family: 'Jost', sans-serif;
-    fill: #FFC0CB; 
+    fill: #B3B3B3;
+    
 }
 
+/* Foreground Animated CINDY */
+#cindyText {
+    font-size: 90px;
+    font-weight: 700;
+    font-family: 'Jost', sans-serif;
+    fill: white;
+}
 .tiny-square {
-    opacity: 50;
+    opacity: 0;
     transition: opacity 1s ease-in-out;
+}
+
+h1{
+  position: absolute;
+  font-size: 4rem;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  font-family: "DynaPuff", serif;
+  font-weight:100;
+color: #FF9FAF;
 }
