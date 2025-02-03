@@ -1,18 +1,19 @@
+
 const grid = document.getElementById("squareGrid");
 
 function generateSquares() {
-    let rows = 12; 
-    let cols = 30; 
+    let rows = 80; 
+    let cols = 200; 
     let squareSize = 15; 
-    let startX = 80; 
-    let startY = 25;
+    let startX = 0; 
+    let startY = 0;
 
     for (let i = 0; i < rows; i++) {
         for (let j = 0; j < cols; j++) {
             let square = document.createElementNS("http://www.w3.org/2000/svg", "rect");
             let x = startX + j * squareSize;
             let y = startY + i * squareSize;
-            let shade = `rgba(255, 192, 203, ${Math.random() * 0.8+ 0.4})`;
+            let shade = `rgba(255, 182, 163, ${Math.random() * 0.7+ 0.4})`;
 
             square.setAttribute("x", x);
             square.setAttribute("y", y);
@@ -32,19 +33,7 @@ function fadeSquares() {
         square.style.opacity = Math.random(); // Random fading
     });
 
-    setTimeout(fadeSquares, 800); 
-}
-
-generateSquares();
-fadeSquares();
-
-function fadeSquares() {
-    const squares = document.querySelectorAll(".tiny-square");
-    squares.forEach(square => {
-        square.style.opacity = Math.random(); 
-    });
-
-    setTimeout(fadeSquares, 500); 
+    setTimeout(fadeSquares, 600); 
 }
 
 generateSquares();
