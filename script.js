@@ -1,4 +1,3 @@
-
 const grid = document.getElementById("squareGrid");
 
 function generateSquares() {
